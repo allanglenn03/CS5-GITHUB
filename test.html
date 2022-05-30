@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Page</title>
+        <link rel="stylesheet" href="styletest.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1>TEST<span>PAGE</span></h1>
+                </div>
+                <ul class="navigation">
+                    <a><li onclick="homeerror()">Home</li></a>
+                    <a><li onclick="abt()">About</li></a>
+                    <a><li onclick="blog()">Blogs</li></a>
+                    <a><li onclick="contact_allan()">Contact - Allan</li></a>
+                    <a><li onclick="contact_rodelio()">Contact - Rodelio</li></a>
+                    <a><li onclick="logoutvalidate()">Logout</li></a>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="testing">
+            <p>This page is only intended for testing</p>
+        </div>
+
+    </body>
+    
+    <script>
+    function logoutvalidate(){
+        alert("You will be logged out!");
+        window.location.href= "loginpage.html";
+    }
+
+    function contact_allan(){
+        alert("You will be opening a new window!");
+        window.open('https://www.facebook.com/allanglennparazo.aceres/');
+    }
+
+    function contact_rodelio(){
+        alert("You will be opening a new window!");
+        window.open('https://www.facebook.com/Rodel.Sumaoang.Lactaotao');
+    }
+
+    function homeerror(){
+        alert("You will be redirected to the Homepage!");
+        window.location.href= "landing.html";
+    }
+
+    function blog(){
+        alert("You will be redirected to Blog Page");
+        window.location.href= "blog.html";
+    }
+
+    function abt(){
+        alert("You will be redirected to About page");
+        window.location.href= "about.html";
+    }
+
+    function ref(){
+        alert("You will be redirected to Reference page");
+        window.location.href= "reference.html";
+    }
+
+</script>
+
+
+</html>
