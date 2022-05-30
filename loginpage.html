@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log in Page</title>
+        <link rel="stylesheet" href = "stylelogin.css">
+        <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1>LOGIN <span>PAGE</span></h1>
+                </div>
+                <ul class="navigation">
+                    <a><li onclick="contact_allan()">Contact - Allan</li></a>
+                    <a><li onclick="contact_rodelio()">Contact - Rodelio</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class ="box">
+            <h1>LOG IN</h1>
+            <input type="text" name="" placeholder = "Enter Username" id ="username">
+            <input type="password" name="" placeholder = "Enter Password" id ="password">
+            <input type="submit" name="" value = "Login" onclick="validate()">
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <h3>FINAL REQUIREMENT</h3>
+                <p>This webpage is built as part of the requirement for the partial fulfillment of the course, Integrated Programming Technologies.</p>
+                <ul class="socials">
+                    <li onclick="facebook()"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li onclick="twitter()"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li onclick="google()"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li onclick="youtube()"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li onclick="linkedin()"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+                
+                <div class="footer-bottom">
+                    <p>Copyright &copy 2022 by Aceres and Lactaotao. Credits to the original owner of the footer source code <br><span>codeOpacity</span></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        function validate(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+
+        if (username=="admin"&&password=="admin"){
+            alert("Logged in successfully");
+            document.location.href = "landing.html";
+        }
+
+        else{
+            alert("Log in failed");
+            window.location.href= "loginpage.html";
+        }
+    }
+
+    function contact_allan(){
+        alert("You will be opening a new window!");
+        window.open('https://www.facebook.com/allanglennparazo.aceres/');
+    }
+
+    function contact_rodelio(){
+        alert("You will be opening a new window!");
+        window.open('https://www.facebook.com/Rodel.Sumaoang.Lactaotao');
+    }
+
+    function facebook(){
+        alert("You will be redirected to Facebook");
+        window.open('https://www.facebook.com/');
+    }
+
+    function twitter(){
+        alert("You will be redirected to Twitter");
+        window.open('http://twitter.com/');
+    }
+    
+    function google(){
+        alert("You will be redirected to Google");
+        window.open('http://google.com/');
+    }
+
+    function youtube(){
+        alert("You will be redirected to YouTube");
+        window.open('http://youtube.com/');
+    }
+
+    function linkedin(){
+        alert("You will be redirected to Linked in");
+        window.open('https://www.linkedin.com/login');
+    }
+
+    </script>
+</html>
