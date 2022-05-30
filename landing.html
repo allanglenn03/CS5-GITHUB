@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href = "stylelanding.css">
+    <link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <h1>HOME<span>PAGE</span></h1>
+            </div>
+            <ul class="navigation">
+                <a><li onclick="homeerror()">Home</li></a>
+                <a><li onclick="abt()">About</li></a>
+                <a><li onclick="blog()">Blogs</li></a>
+                <a><li onclick="contact_allan()">Contact - Allan</li></a>
+                <a><li onclick="contact_rodelio()">Contact - Rodelio</li></a>
+                <a><li onclick="logoutvalidate()">Logout</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="allan">
+        <img src="glenn.jpg" width="200" height="200" id="glennimage">
+        <h1><i>Allan Glenn P. Aceres</i></h1>
+        <p1><b>Quick Facts</b></p1>
+        <br>
+        <p2><b>Birthday:</b> October 03, 1999</p2>
+        <br>
+        <p3><b>Birthplace:</b> Camiling, Tarlac</p3>
+        <br>
+        <p4><b>Hobby:</b> Doing computer-related stuff.</p4>
+        <br>
+        <p5><b>Birth order:</b> Eldest</p5>
+        <br>
+        <p6><b>Number of siblings:</b> 1</p6>
+
+        <input type="profileallan" name="" placeholder = "Go To Profile" id ="profileallan" onclick="gotoprofileallan()">
+    </div>
+
+    <div class="rodelio">
+        <img src="rodel.jpg" width="200" height="200" id="glennimage">
+        <h1><i>Rodelio S. Lactaotao</i></h1>
+        <p1><b>Quick Facts</b></p1>
+        <br>
+        <p2><b>Birthday:</b> November 04, 2001</p2>
+        <br>
+        <p3><b>Birthplace:</b> Ramos General Hospital</p3>
+        <br>
+        <p4><b>Hobby:</b> Traveling</p4>
+        <br>
+        <p5><b>Birth order:</b> Eldest</p5>
+        <br>
+        <p6><b>Number of siblings:</b> 2</p6>
+
+        <input type="profilerodelio" name="" placeholder = "Go To Profile" id ="profilerodelio" onclick="gotoprofilerodelio()">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>FINAL REQUIREMENT</h3>
+            <p>This webpage is built as part of the requirement for the partial fulfillment of the course, Integrated Programming Technologies.</p>
+            <ul class="socials">
+                <li onclick="facebook()"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li onclick="twitter()"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li onclick="google()"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li onclick="youtube()"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li onclick="linkedin()"><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+            
+            <div class="footer-bottom">
+                <p>Copyright &copy 2022 by Aceres and Lactaotao. Credits to the original owner of the footer source code <br><span>codeOpacity</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Side Bar</header>
+        <ul>
+            <li onclick="ref()"><a href="#"><i class="fas fa-qrcode"></i>Reference</a></li>
+            <li onclick="abt()"><a href="#"><i class="fas fa-question-circle"></i>About</a></li>
+            <li onclick="test()"><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+            <li onclick="test()"><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    function logoutvalidate(){
+        alert("You will be logged out!");
+        window.location.href= "loginpage.html";
+    }
+
+    function contact_allan(){
+        alert("You will be opening a new window!");
+        window.open('https://www.facebook.com/allanglennparazo.aceres/');
+    }
+
+    function contact_rodelio(){
+        alert("You will be opening a new window!");
+        window.open('https://www.facebook.com/Rodel.Sumaoang.Lactaotao');
+    }
+
+    function gotoprofileallan(){
+        alert("You will be redirected to Allan's profile!");
+        window.location.href= "allanprofile.html";
+    }
+
+    function homeerror(){
+        alert("You are already at the Homepage!");
+    }
+
+    function gotoprofilerodelio(){
+        alert("You will be redirected to Rodelio's profile!");
+        window.location.href= "rodelioprofile.html";
+    }
+
+    function facebook(){
+        alert("You will be redirected to Facebook");
+        window.open('https://www.facebook.com/');
+    }
+
+    function twitter(){
+        alert("You will be redirected to Twitter");
+        window.open('http://twitter.com/');
+    }
+    
+    function google(){
+        alert("You will be redirected to Google");
+        window.open('http://google.com/');
+    }
+
+    function youtube(){
+        alert("You will be redirected to YouTube");
+        window.open('http://youtube.com/');
+    }
+
+    function linkedin(){
+        alert("You will be redirected to Linked in");
+        window.open('https://www.linkedin.com/login');
+    }
+
+    function blog(){
+        alert("You will be redirected to Blog Page");
+        window.location.href= "blog.html";
+    }
+
+    function abt(){
+        alert("You will be redirected to About page");
+        window.location.href= "about.html";
+    }
+
+    function ref(){
+        alert("You will be redirected to Reference page");
+        window.location.href= "reference.html";
+    }
+
+    function test(){
+        alert("You will be redirected to testing page");
+        window.location.href= "test.html";
+    }
+
+</script>
+
+</html>
